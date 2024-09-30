@@ -29,4 +29,13 @@ class PageController extends Controller
             'results' => $technologies
         ]);
     }
+
+    public function allType()
+    {
+        $types = Type::all();
+        return response()->json([
+            'success' => true,
+            'results' => $types
+        ]);
+    }
 }
