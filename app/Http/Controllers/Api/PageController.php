@@ -20,4 +20,13 @@ class PageController extends Controller
             'results' => $projects
         ]);
     }
+
+    public function allTechnologies()
+    {
+        $technologies = Technology::all();
+        return response()->json([
+            'success' => true,
+            'results' => $technologies
+        ]);
+    }
 }

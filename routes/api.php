@@ -15,3 +15,4 @@ use App\Http\Controllers\Api\PageController;
 */
 
 Route::get('/', [PageController::class, 'index']);
+Route::get('/tecnologie', [PageController::class, 'allTechnologies']);
